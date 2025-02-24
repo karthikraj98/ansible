@@ -7,4 +7,9 @@
       name: nginx
       state: present
 
-  
+- name: run nginx
+  became: yes
+  tasks: # serivce status
+  - name: nginx service
+    ansible.builtin.service:
+    state: present
