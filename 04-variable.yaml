@@ -1,0 +1,9 @@
+- name: variable
+  hosts: web
+  vars:
+    COURSE: "DEVOPS"
+    DURATION: "120 HOURS"
+    TRAINER: "SIVAKUMAR REDDY"
+  tasks:
+  ansible.builtin.debug:
+    "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}
