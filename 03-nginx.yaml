@@ -7,7 +7,7 @@
       name: nginx
       state: present
 
-- name: run nginx
+  - name: run nginx
   became: yes
   tasks: # serivce status
   - name: nginx service
