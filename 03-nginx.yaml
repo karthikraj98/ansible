@@ -1,5 +1,6 @@
 - name: nginx
   hosts: web
+  become: yes #sudo access
   tasks: # to install nginx on remote servers
   - name: install nginx
     ansible.builtin.package:
