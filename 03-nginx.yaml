@@ -2,7 +2,7 @@
   hosts: web
   tasks: # to install nginx on remote servers
   - name: install nginx
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: nginx
       state: present
 
