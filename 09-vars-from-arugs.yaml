@@ -1,6 +1,6 @@
-- name: vars with prompt
+- name: vars with arugs
   hosts: web
   tasks:
   - name: print the info
     ansible.builtin.debug:
-      msg: Hello {{Name}}, {{Greetings}}
+      msg: "Hello {{Name}}, {{Greetings}}"
