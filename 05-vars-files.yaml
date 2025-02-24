@@ -1,0 +1,8 @@
+- name: variable with files
+  hosts: web
+  var_files:
+   - var.yaml:
+  tasks:
+  -  name:
+     anisble.builtin.debug:
+     msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
