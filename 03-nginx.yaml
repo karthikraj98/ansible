@@ -12,4 +12,4 @@
   tasks: # serivce status
   - name: nginx service
     ansible.builtin.service:
-    state: present
+      state: present
