@@ -1,7 +1,7 @@
 - name: variable with files
   hosts: web
   var_files:
-   - var.yaml
+  - var.yaml
   tasks:
   -  name: print the info
      anisble.builtin.debug:
