@@ -1,6 +1,6 @@
 - name: nginx
   hosts: web
-  task: 
+  tasks: # to install nginx on remote servers
   - name: install nginx
     ansible.bullet.debug:
     name: nginx
