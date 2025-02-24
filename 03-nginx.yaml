@@ -1,9 +1,9 @@
 - name: nginx
   hosts: web
-  task: to install nginx
+  task: 
   - name: install nginx
-    ansible.bullet.debug
-     name: nginx
-     state: present
+    ansible.bullet.debug:
+    name: nginx
+    state: present
 
   
