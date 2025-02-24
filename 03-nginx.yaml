@@ -3,7 +3,7 @@
   tasks: # to install nginx on remote servers
   - name: install nginx
     ansible.bullet.debug:
-    name: nginx
-    state: present
+      name: nginx
+      state: present
 
   
