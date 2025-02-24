@@ -3,6 +3,6 @@
   vars_files:
   - var.yaml
   tasks:
-  -  name: print the info
-     anisble.builtin.debug:
-       msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
+  - name: print the info
+    anisble.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
