@@ -1,0 +1,14 @@
+- name: vars with prompt
+  tasks: web
+  vars_prompt:
+  - name: COURSE
+  prompt: DEVOPS
+  -name: TRAINER
+  prompt: SIVAKUMAR REDDY 
+  =name: DURATION
+  prompt: 120 DAYS
+    tasks:
+   - name: print the info
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
+    
