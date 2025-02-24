@@ -2,11 +2,11 @@
   hosts: web
   vars_prompt:
   - name: COURSE
-    prompt: DEVOPS
+    prompt: please enter the prompt
   - name: TRAINER
-    prompt: SIVAKUMAR REDDY 
+    prompt: please enter the prompt
   - name: DURATION
-    prompt: 120 DAYS
+    prompt: please enter the prompt
   tasks:
     - name: print the info
       ansible.builtin.debug:
