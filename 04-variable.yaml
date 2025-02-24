@@ -14,7 +14,7 @@
       COURSE: "Ansible"
       Duration: "2 weeks"
     ansible.builtin.debug:
-        msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
+        msg: "Hi, I am learning {{COURSE}}, duration of course is {{Duration}} and the Trainer name is {{TRAINER}}"
 
   - name: print the info again and again
     ansible.builtin.debug:
