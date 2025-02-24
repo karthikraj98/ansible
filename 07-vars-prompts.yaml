@@ -5,7 +5,7 @@
   prompt: DEVOPS
   -name: TRAINER
   prompt: SIVAKUMAR REDDY 
-  =name: DURATION
+  -name: DURATION
   prompt: 120 DAYS
   tasks:
      - name: print the info
