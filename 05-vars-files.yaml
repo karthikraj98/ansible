@@ -5,4 +5,4 @@
   tasks:
   -  name: print the info
      anisble.builtin.debug:
-     msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
+       msg: "Hi, I am learning {{COURSE}}, duration of course is {{DURATION}} and the Trainer name is {{TRAINER}}"
