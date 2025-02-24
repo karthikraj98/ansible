@@ -3,7 +3,7 @@
   become: yes #sudo access
   tasks: # to install nginx on remote servers
   - name: install nginx
-    ansible.builtin.package:
+    ansible.builtin.package: #heterongenous module that can work for all distribution
       name: nginx
       state: present
 
