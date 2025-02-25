@@ -11,6 +11,7 @@
     - nginx
     - git
     - httpd
+    - maven
 
   - name: status enabled
     ansible.builtin.package:
