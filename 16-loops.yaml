@@ -1,0 +1,12 @@
+- name: loop demo
+  connection: local
+  hosts: local
+  tasks:
+  - name: print the list of names
+    ansiable.builtin.debug:
+    msg: "print the names {{ item }}"
+    loops:
+    - Ramesh
+    - suresh
+    - umesh
+    - Rakesh  
