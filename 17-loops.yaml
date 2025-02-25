@@ -12,6 +12,7 @@
     - git
     - httpd
     - maven
+    - openssh-server
 
   - name: status enabled
     ansible.builtin.service:
@@ -19,7 +20,7 @@
       state: started
       enabled: yes
     loop:
-    - mysql
-    - nginx
-    - git
+    - mysqld
+    - nginx.service
     - httpd
+    - sshd
