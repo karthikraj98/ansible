@@ -1,14 +1,14 @@
-- name: openssh-server install and run
+- name: mysql-server install and run
   hosts: web
   become: yes #take sudo access
   tasks:
-  - name: install openssh-server
+  - name: install mysql-server
     ansible.builtin.package: #heterongenous module that can work for all distros
-      name: openssh-server
+      name: mysql-server
       state: present
   
-  - name: sshd
+  - name: mysqld
     ansible.builtin.service:
-      name: sshd
+      name: mysqld
       state: started
       enabled: yes
