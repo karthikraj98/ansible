@@ -8,5 +8,5 @@
 
     - name: nginx status
       ansible.builtin.service:
-        state: present
+        state: started
         enabled: yes
