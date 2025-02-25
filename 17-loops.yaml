@@ -21,6 +21,5 @@
       enabled: yes
     loop:
     - mysqld
-    - nginx
     - sshd
     - httpd
