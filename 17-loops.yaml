@@ -4,7 +4,17 @@
   tasks:
   - name: print the list of names
     ansible.builtin.package:
-      msg: "Hello {{ item }}"
+      name: "{{ item }}"
+      state: present
+    loop:
+    - mysql
+    - nginx
+    - git
+    - httpd
+
+    name: "{{ item }}"
+    state: present
+    enabled: yes
     loop:
     - mysql
     - nginx
