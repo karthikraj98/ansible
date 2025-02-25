@@ -1,5 +1,5 @@
 - name: nginx
-  hosts: web
+  hosts: local
   become: yes
   tasks:
   - name: print the stats
