@@ -8,7 +8,8 @@
 
   - name : install nginx if redhat
     ansible.builtin.dnf:
-    state: present
+      name: ngnix
+      state: present
     when: ansible_os_family == "redhat"
 
   - name : install nginx if debian
