@@ -3,7 +3,7 @@
   hosts: local
   tasks:
   - name: print the list of names
-    ansible.builtin.debug:
+    ansible.builtin.package:
       msg: "Hello {{ item }}"
     loop:
     - mysql
