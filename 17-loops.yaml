@@ -2,7 +2,7 @@
   become: yes
   hosts: web
   tasks:
-  - name: print the list of names
+  - name: install packages
     ansible.builtin.package:
       name: "{{ item }}"
       state: present
