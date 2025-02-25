@@ -1,12 +1,12 @@
-- name: Ngnix
+- name: mysql
   hosts: web
   become: yes
-  tasks: #install nginx
-    - name: nginx
-      ansible.builtin.package:
-        state: present
+  tasks: #install mysql
+   - name: mysql
+     ansible.builtin.package:
+      state: mysql
 
-    - name: nginx status
-      ansible.builtin.service:
-        state: started
-        enabled: yes
+   - name: mysql status
+     ansible.builtin.service:
+      state: started
+      enabled: yes
