@@ -4,7 +4,7 @@
   tasks:
   - name: print the list of names
     ansiable.builtin.debug:
-    msg: "print the names {{ item }}"
+      msg: "print the names {{ item }}"
     loops:
     - Ramesh
     - suresh
