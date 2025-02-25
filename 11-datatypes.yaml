@@ -25,7 +25,7 @@
   - name: "devops with aws"
     anisble.builtin.debug:
       msg: "Hi, i am learning {{COURSE}}, duration is {{DURATION}}. We do have topics like {{topics}} and I course is {{live}}. Here learn 
-      tools like {{tools}}" 
+       tools like {{tools}}" 
 
 
     
