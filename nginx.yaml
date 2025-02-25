@@ -5,8 +5,7 @@
       ansible.builtin.package:
         state: present
 
- 
     - name: nginx status
       ansible.builtin.service:
-      state: present
-      enabled: yes
+        state: present
+        enabled: yes
