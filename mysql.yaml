@@ -1,14 +1,14 @@
-- name: git
+- name: httpd
   hosts: web
   become: yes
-  tasks: #install git
-  - name: git
+  tasks: #install httpd
+  - name: httpd
     ansible.builtin.package:
      name: mysql
      state: present
 
-  - name: run git
+  - name: run httpd
     ansible.builtin.service:
-     name: git
+     name: httpd
      state: started
      enabled: yes
