@@ -1,6 +1,6 @@
 - name: loops demo
-  connection: local
-  hosts: local
+  become: yes
+  hosts: web
   tasks:
   - name: print the list of names
     ansible.builtin.package:
