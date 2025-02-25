@@ -1,18 +1,18 @@
-- name: 
+- name: create user
   hosts: web
   become: yes
   tasks: 
   - name: create user exits or not
-    anisble_builtin_command: id expense
+    anisble.builtin.command: id expense
     register: USER # here USER is a variable that gets output from above command
-    ignore_errors: true
+    ignore_errors: True
 
   - name: print user information
-    anisble_builtin_debug:
+    anisble.builtin.debug:
      msg: "user info: {{ USER}}"  
 
   - name: create user exits or not
-    anisble_builtin_command: useradd expense
+    anisble.builtin.command: useradd expense
     register: USER # here USER is a variable that gets output from above command
     
    
