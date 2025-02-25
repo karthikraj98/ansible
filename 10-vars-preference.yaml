@@ -1,0 +1,20 @@
+- name: variable with preference
+  hosts: web
+  vars:
+    COURSE: "DevOps with AWS"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy M"
+  vars_files:
+  - vars.yaml  
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter the prompt
+     private: false # not confidential
+  tasks:
+  - name: print the information
+    vars:
+      #COURSE: "DevOps with AWS from TASK level"
+      DURATION: "120HRS"
+      TRAINER: "Sivakumar Reddy M"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}"  
