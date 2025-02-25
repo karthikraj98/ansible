@@ -7,7 +7,7 @@
       name: openssh-server
       state: present
   
-  - name: run openssh-server
+  - name: ssh.service
     ansible.builtin.service:
       name: openssh-server
       state: started
