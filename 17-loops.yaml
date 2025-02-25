@@ -21,6 +21,6 @@
       enabled: yes
     loop:
     - mysqld
-    - nginx.service
+    - restart nginx restart
     - httpd
     - sshd
