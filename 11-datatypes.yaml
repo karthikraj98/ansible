@@ -12,7 +12,7 @@
     - DOCKER
     - K8s
     - AWS
-    live= true #boolean  
+    live: true #boolean  
     tools: #map/dictinary
     - ci: jenkins
     - cm: ansible
