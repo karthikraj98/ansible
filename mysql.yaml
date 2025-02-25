@@ -1,14 +1,14 @@
-- name: httpd install and run
+- name: sshd install and run
   hosts: web
   become: yes #take sudo access
   tasks:
-  - name: install httpd
+  - name: install sshd
     ansible.builtin.package: #heterongenous module that can work for all distros
-      name: httpd
+      name: sshd
       state: present
   
-  - name: run httpd
+  - name: run sshd
     ansible.builtin.service:
-      name: httpd
+      name: sshd
       state: started
       enabled: yes
