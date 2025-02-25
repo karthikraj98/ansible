@@ -3,7 +3,7 @@
   tasks: #install nginx
     - name: nginx
       ansible.builtin.package:
-      state: present
+        state: present
 
  
     - name: nginx status
