@@ -14,7 +14,7 @@
     - maven
 
   - name: status enabled
-    ansible.builtin.package:
+    ansible.builtin.service:
       name: "{{ item }}"
       state: present
       enabled: yes
