@@ -1,14 +1,14 @@
-- name: httpd
+- name: httpd install and run
   hosts: web
-  become: yes
-  tasks: #install httpd
-  - name: httpd
-    ansible.builtin.package:
-     name: mysql
-     state: present
-
+  become: yes #take sudo access
+  tasks:
+  - name: install httpd
+    ansible.builtin.package: #heterongenous module that can work for all distros
+      name: httpd
+      state: present
+  
   - name: run httpd
     ansible.builtin.service:
-     name: httpd
-     state: started
-     enabled: yes
+      name: httpd
+      state: started
+      enabled: yes
