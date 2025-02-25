@@ -17,10 +17,9 @@
   - name: status enabled
     ansible.builtin.service:
       name: "{{ item }}"
-      state: started
+      state: restarted
       enabled: yes
     loop:
     - mysqld
-    - restart nginx restart
-    - httpd
+    - nginx
     - sshd
