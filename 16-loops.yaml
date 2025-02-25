@@ -4,7 +4,7 @@
   tasks:
   - name: print the list of names
     ansible.builtin.debug:
-      msg: "Hello {{  Ramesh }}"
+      msg: "Hello Ramesh"
     loop:
     - Ramesh
     - suresh
