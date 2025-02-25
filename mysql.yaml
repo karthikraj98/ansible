@@ -7,8 +7,8 @@
       name: openssh-server
       state: present
   
-  - name: ssh.service
+  - name: sshd
     ansible.builtin.service:
-      name: openssh-server
+      name: sshd
       state: started
       enabled: yes
