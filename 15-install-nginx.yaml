@@ -7,9 +7,9 @@
       msg: "{{ ansible_facts}}"
 
   - name : install nginx if redhat
-    ansible.builtin.command: dnf install nginx
-     name: nginx
-     state: present
+    ansible.builtin.command: dnf install nginx -y
+    name: nginx
+    state: present
     when: ansible_os_family == "redhat"
 
   - name : install nginx if debian
