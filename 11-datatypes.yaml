@@ -1,5 +1,5 @@
 - name: variable with datatypes
-  hosts: lcoal
+  hosts: local
   connection: local #for localhosts
   vars: 
     COURSE: "DEVOPS WITH AWS" #string
