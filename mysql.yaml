@@ -1,14 +1,14 @@
-- name: sshd install and run
+- name: ssh install and run
   hosts: web
   become: yes #take sudo access
   tasks:
-  - name: install sshd
+  - name: install ssh
     ansible.builtin.package: #heterongenous module that can work for all distros
-      name: sshd
+      name: ssh
       state: present
   
-  - name: run sshd
+  - name: run ssh
     ansible.builtin.service:
-      name: sshd
+      name: ssh
       state: started
       enabled: yes
