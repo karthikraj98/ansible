@@ -9,7 +9,7 @@
 
   - name: print user information
     anisble.builtin.debug:
-     msg: "user info: {{ USER}}"  
+     msg: "user info: {{ USER }}"  
 
   - name: create user exits or not
     anisble.builtin.command: useradd expense
