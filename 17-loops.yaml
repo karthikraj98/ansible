@@ -16,7 +16,7 @@
   - name: status enabled
     ansible.builtin.service:
       name: "{{ item }}"
-      state: present
+      state: started
       enabled: yes
     loop:
     - mysql
