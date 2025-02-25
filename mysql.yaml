@@ -1,14 +1,14 @@
-- name: ssh install and run
+- name: openssh-server install and run
   hosts: web
   become: yes #take sudo access
   tasks:
-  - name: install ssh
+  - name: install openssh-server
     ansible.builtin.package: #heterongenous module that can work for all distros
-      name: ssh
+      name: openssh-server
       state: present
   
-  - name: run ssh
+  - name: run openssh-server
     ansible.builtin.service:
-      name: ssh
+      name: openssh-server
       state: started
       enabled: yes
