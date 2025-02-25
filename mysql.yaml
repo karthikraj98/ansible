@@ -1,14 +1,14 @@
-- name: mysqld
+- name: git
   hosts: web
   become: yes
-  tasks: #install mysqld
-  - name: mysqld
+  tasks: #install git
+  - name: git
     ansible.builtin.package:
      name: mysql
      state: present
 
-  - name: run mysqld
+  - name: run git
     ansible.builtin.service:
-     name: mysqld
+     name: git
      state: started
      enabled: yes
