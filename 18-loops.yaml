@@ -1,0 +1,13 @@
+- name: loops demo
+  become: yes
+  hosts: web
+  tasks:
+  - name: install packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name 'mysql', state 'restarted'}
+    - { name 'nginx', state 'restarted'}
+    - { name 'httpd', state 'restarted'}
+    - { name 'postfix', state 'restarted'} 
