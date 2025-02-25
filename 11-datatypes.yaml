@@ -14,9 +14,9 @@
     - AWS
     live: true #boolean  
     tools: #map/dictinary
-    - ci: jenkins
-    - cm: ansible
-    - cloud: aws
+      ci: jenkins
+      cm: ansible
+      cloud: aws
       aws:
       - IAM
       - S3 BUCKET
