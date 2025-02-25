@@ -7,11 +7,11 @@
     private: false
   tasks: 
   - name: print given number is less than 10
-    anisble_builtin_debug:
+    anisble.builtin.debug:
       msg: "Given number {{my_number}} is less than 10"
     when: my_number | int < 10
-    
+
   - name: print given number is greater than 10
-    anisble_builtin_debug:
+    anisble.builtin.debug:
       msg: "Given number {{my_number}} is greater than are equal to 10"
     when: my_number | int >= 10    
