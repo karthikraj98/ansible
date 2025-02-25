@@ -9,9 +9,9 @@
   - name : install nginx if redhat
     ansible_builtin.dnf
     state: present
-    when: ansible_os_fanily is {{ redhat }}
+  when: ansible_os_fanily is {{ redhat }}
 
   - name : install nginx if debian
     ansible_builtin.dnf
     state: present
-    when: ansible_os_fanily is {{ debian }}    
+  when: ansible_os_fanily is {{ debian }}    
