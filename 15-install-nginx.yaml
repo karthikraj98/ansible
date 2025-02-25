@@ -1,6 +1,6 @@
 - name: nginx
   hosts: web
-  beccome: yes
+  become: yes
   tasks:
   - name: 
     ansible.builtin.debug:
