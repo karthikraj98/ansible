@@ -12,9 +12,11 @@
     - git
     - httpd
 
-    name: "{{ item }}"
-    state: present
-    enabled: yes
+  - name: status enabled
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+      enabled: yes
     loop:
     - mysql
     - nginx
