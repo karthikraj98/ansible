@@ -1,5 +1,6 @@
 - name: variable with datatypes
-  hosts: web
+  hosts: lcoal
+  connection: local
   vars: 
     COURSE: "DEVOPS WITH AWS" #string
     DURATION: 120 HOURS #number
