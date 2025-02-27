@@ -9,7 +9,7 @@
     - mysql
     - backend
     - frontend
-   zone: learningdevops.shop
+  zone: learningdevops.shop
   tasks:   
   - name: install boto3 and botocore
     ansible.builtin.pip:
