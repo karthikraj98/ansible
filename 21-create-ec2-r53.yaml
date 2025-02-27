@@ -9,7 +9,7 @@
     - mysql
     - backend
     - frontend
-    zone: learningdevops.shop
+  zone: learningdevops.shop
   tasks:   
   - name: create ec2 instance
     amazon.aws.ec2_instance:
