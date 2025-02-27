@@ -30,15 +30,16 @@
   - name: print the output
     ansible.builtin.debug:
       msg: "{{ ec2_instances }}"  
-
+ 
+   #private IP R53
   - name: create r53 private record
     amazon.aws.route53:
      state: present
      zone: "{{ zone }}"
-     record: "{{ item.item }}.{{ zone }}"
+     record: "{{ item.item }}.{{ zone }}"  #mysql.learningdevops.shop
      type: A
      ttl: 1
      value: "{{ ec2_instance[0].private_ip_address }}"
      wait: true  
      overwrite: true
-    register: "{ec2_instances.results}"     
+    loop: "{ec2_instances.results}"     
