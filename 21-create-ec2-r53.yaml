@@ -3,7 +3,7 @@
   connection: local
   vars:
    subnet_id: "subnet-0b49346919c8a4222 "
-   sg_id: " sg-09c8ee01c6a34bed6 "
+   sg_id: " sg-0ba969f3e22a48b24 "
    ami_id: " ami-09c813fb71547fc4f "    
    instances:
     - mysql
@@ -37,4 +37,4 @@
      value: "{{ ec2_instance[0].private_ip_address }}"
      wait: true  
      overwrite: true
-    register: "{ec2_instance.results}"     
+    register: "{ec2_instances.results}"     
