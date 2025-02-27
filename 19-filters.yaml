@@ -8,4 +8,4 @@
 
   - name: print in uppercase 
     ansible.builtin.debug:
-      msg: "hello, {{ greetings | upper }}"    
+      msg: "{{ greetings | upper }}"    
