@@ -26,4 +26,15 @@
      image_id: "{{  ami_id }}"
     loop: "{{ instances }}"
     register: ec2_instances
-      
+
+  - name: create r53 private record
+    amazon.aws.route53:
+     state: present
+     zone: "{{ zone }}"
+     record: "{{ item.item }}.{{ zone }}"
+     type: A
+     ttl: 1
+     value: "{{ ec2_instance[0].private_ip_address }}"
+     wait: true  
+     overwrite: true
+    register: "{ec2_instance.results}"     
