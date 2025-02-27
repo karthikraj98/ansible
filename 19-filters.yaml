@@ -7,5 +7,7 @@
       msg: "hello, {{ course | default('Ansible') }}"
 
   - name: print in uppercase 
-    ansible.builtin.debug:
-      msg: "{{ greetings | upper }}"    
+    vars: 
+      greetings: "Hello Ramesh"
+      ansible.builtin.debug:
+        msg: "{{ greetings | upper }}"    
