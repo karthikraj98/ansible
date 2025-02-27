@@ -3,5 +3,5 @@
   connection: local
   tasks: 
   - name: print the default variable 
-    asible_builtin.debug:
+    ansible_builtin.debug:
     msg: "hello, {{ course }}"
