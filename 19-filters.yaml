@@ -30,3 +30,12 @@
        number: [1, 4, 6, 9, 456, 25, 226, 45, 59, 88, 101,] 
     ansible.builtin.debug:
       msg: "min {{ number | min }} , max {{ number | max }}"    
+
+  - name: map to list
+    vars:
+      course: 
+        name: "Devops with aws"
+        duration: 120
+        trainer: "sivakumar reddy"
+    ansible.builtin.debug;
+    msg: {{ course | dic2titems}}         
