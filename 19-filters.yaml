@@ -21,12 +21,12 @@
 
   - name: print in unique numbers
     vars: 
-       number: [1, 4, 6, 9, 456, 25, 226, 45, 59, 88, 101,] 
+       number: [1, 4, 6, 9, 25, 45, 59,] 
     ansible.builtin.debug:
       msg: "{{ number | unique }}"          
 
   - name: print in minimum and maximum numbers
     vars: 
-       number: [1, 4, 6, 9, 25, 45, 59] 
+       number: [1, 4, 6, 9, 456, 25, 226, 45, 59, 88, 101,] 
     ansible.builtin.debug:
       msg: "min {{ number | min }} , max {{ number | max }}"    
